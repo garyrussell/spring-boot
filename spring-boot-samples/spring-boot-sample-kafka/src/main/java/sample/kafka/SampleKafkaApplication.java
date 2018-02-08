@@ -24,4 +24,5 @@ public class SampleKafkaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SampleKafkaApplication.class, args);
 	}
+
 }

@@ -25,4 +25,5 @@ public class Consumer {
 	public void processMessage(SampleMessage message) {
 		System.out.println("consumer has received message : [" + message + "]");
 	}
+
 }

@@ -23,10 +23,11 @@ import org.springframework.stereotype.Component;
 public class Producer {
 
 	@Autowired
-	private KafkaTemplate kafkaTemplate;
+	private KafkaTemplate<Object, SampleMessage> kafkaTemplate;
 
 	public void send(SampleMessage message) {
 		kafkaTemplate.send("myTopic", message);
 		System.out.println("producer has sent message.");
 	}
+
 }
